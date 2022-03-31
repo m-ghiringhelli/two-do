@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { signInUser } from '../../services/users';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
@@ -6,7 +7,7 @@ export default function Auth() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('submitted');
+    signInUser(email, password);
   };
 
   return (
