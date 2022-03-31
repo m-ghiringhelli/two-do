@@ -8,9 +8,6 @@ import { getUser } from './services/users';
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
 
-  console.log(getUser());
-  console.log(currentUser);
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -19,7 +16,7 @@ function App() {
             <Auth setCurrentUser={setCurrentUser} />
           </Route>
           <Route path='/todos'>
-            <Todos />
+            <Todos currentUser={currentUser} />
           </Route>
         </Switch>
       </div>
