@@ -16,7 +16,7 @@ export default function Todos({ currentUser }) {
       setTodos(data);
     };
     fetchData();
-  }, [todos]);
+  }, []);
 
   return (
     <div>

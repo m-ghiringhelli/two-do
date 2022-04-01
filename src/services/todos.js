@@ -9,3 +9,8 @@ export async function addTodo(todo) {
   const response = await client.from('two-dos').insert([todo]);
   return checkError(response);
 }
+
+export async function completeTodo(todo) {
+  const response = await client.from('two-dos').update({ completed: true }).match({ task: todo.task });
+  return checkError(response);
+}
