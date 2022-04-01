@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { signInUser } from '../../services/users';
 import { getUser } from '../../services/users';
