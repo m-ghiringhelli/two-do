@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { signInUser } from '../../services/users';
 import { getUser } from '../../services/users';
 
-export default function Auth({ setCurrentUser }) {
+export default function Auth({ currentUser, setCurrentUser }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   
@@ -12,8 +12,8 @@ export default function Auth({ setCurrentUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setCurrentUser(getUser());
-    signInUser(email, password);
     history.push('/todos');
+    signInUser(email, password);
   };
 
   return (

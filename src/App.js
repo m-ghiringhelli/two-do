@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path='/'>
-            <Auth setCurrentUser={setCurrentUser} />
+            <Auth {...{ setCurrentUser, currentUser }} />
           </Route>
           <Route path='/todos'>
             <Todos currentUser={currentUser} />
