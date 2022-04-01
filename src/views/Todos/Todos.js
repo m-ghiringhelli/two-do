@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { fetchToDos } from '../../services/todos';
+import TodoList from '../../components/TodoList/TodoList';
 
 export default function Todos({ currentUser }) {
   const [todos, setTodos] = useState([]);
@@ -18,11 +19,7 @@ export default function Todos({ currentUser }) {
 
   return (
     <div>
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <p>{todo.task}</p>
-        </div>
-      ))}
+      <TodoList todos={todos} />
     </div>
   );
 }
