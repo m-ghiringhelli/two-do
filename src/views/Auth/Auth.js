@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { signInUser } from '../../services/users';
 import { getUser } from '../../services/users';
 
-export default function Auth({ currentUser, setCurrentUser }) {
+export default function Auth({ setCurrentUser }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   
