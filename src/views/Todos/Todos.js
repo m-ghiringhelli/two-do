@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { fetchToDos } from '../../services/todos';
 import TodoList from '../../components/TodoList/TodoList';
+import AddTodo from '../../components/AddTodo/AddTodo';
 
 export default function Todos({ currentUser }) {
   const [todos, setTodos] = useState([]);
@@ -20,6 +21,7 @@ export default function Todos({ currentUser }) {
   return (
     <div>
       <TodoList todos={todos} />
+      <AddTodo setTodos={setTodos} />
     </div>
   );
 }
