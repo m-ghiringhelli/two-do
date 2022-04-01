@@ -17,6 +17,12 @@ export default function Todos({ currentUser }) {
   }, []);
 
   return (
-    <div>Todos</div>
+    <div>
+      {todos.map((todo) => (
+        <div key={todo.id}>
+          <p>{todo.task}</p>
+        </div>
+      ))}
+    </div>
   );
 }
