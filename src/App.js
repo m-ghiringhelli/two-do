@@ -1,9 +1,10 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
 import Auth from './views/Auth/Auth';
 import Todos from './views/Todos/Todos';
 import { getUser } from './services/users';
+import Header from './components/Header/Header';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -11,9 +12,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Header setCurrentUser={setCurrentUser} />
         <Switch>
           <Route exact path='/'>
-            <Auth {...{ setCurrentUser }} />
+            <Auth {...{ setCurrentUser, currentUser }} />
           </Route>
           <Route path='/todos'>
             <Todos currentUser={currentUser} />
