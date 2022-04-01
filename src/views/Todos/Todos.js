@@ -16,12 +16,12 @@ export default function Todos({ currentUser }) {
       setTodos(data);
     };
     fetchData();
-  }, []);
+  }, [todos]);
 
   return (
     <div>
       <TodoList todos={todos} />
-      <AddTodo setTodos={setTodos} />
+      <AddTodo {...{ todos, setTodos }} />
     </div>
   );
 }

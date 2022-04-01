@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getUserId } from '../../services/users';
 import { addTodo } from '../../services/todos';
 
-export default function AddTodo({ setTodos }) {
+export default function AddTodo({ todos, setTodos }) {
   const [todo, setTodo] = useState('');
 
   const createTodo = async (e) => {
