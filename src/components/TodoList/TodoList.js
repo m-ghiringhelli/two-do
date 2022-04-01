@@ -1,15 +1,9 @@
-import React from 'react';
-import { completeTodo } from '../../services/todos';
-
-export default function TodoList({ todos }) {
-//   const markCompleted = () => {
-//     completeTodo(todo);
-//   };
-
+export default function TodoList({ todos, setTodos, handleClick }) {
+  
   return (
     <>
       {todos.map((todo) => (
-        <div key={todo.id}>
+        <div key={todo.id} onClick={() => handleClick(todo)}>
           <p>{todo.task}</p>
         </div>
       ))}
