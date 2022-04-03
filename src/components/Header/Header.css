@@ -4,6 +4,7 @@
     height: 150px;
     font-size: 3rem;
     font-family: 'Vazirmatn';
+    border-bottom: 5px solid var(--color4);
 }
 
 .header button {
@@ -26,8 +27,6 @@
     background-color: rgb(168, 158, 208)
 }
 
-
-
-/* .hidden {
+.hidden {
     display: none;
-} */
+}

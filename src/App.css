@@ -11,6 +11,8 @@
   --color4: hsla(334, 41%, 68%, 1);
   --color5: hsla(350, 35%, 53%, 1);
   text-align: center;
+  background-color: var(--color3);
+  height: 100vh;
 }
 
 .App-logo {

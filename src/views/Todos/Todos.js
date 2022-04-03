@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { fetchToDos, completeTodo } from '../../services/todos';
 import TodoList from '../../components/TodoList/TodoList';
 import AddTodo from '../../components/AddTodo/AddTodo';
+import './Todos.css';
 
 export default function Todos({ currentUser }) {
   const [todos, setTodos] = useState([]);
@@ -24,9 +25,9 @@ export default function Todos({ currentUser }) {
   };
 
   return (
-    <div>
+    <div className='todo'>
       <TodoList {...{ todos, setTodos, handleClick }} />
-      <AddTodo {...{ todos, setTodos }} />
+      <AddTodo className='addTodo' {...{ todos, setTodos }} />
     </div>
   );
 }
