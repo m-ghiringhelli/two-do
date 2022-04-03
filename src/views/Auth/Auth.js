@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { getUser, signInUser } from '../../services/users';
+import './Auth.css';
 
 export default function Auth({ currentUser, setCurrentUser }) {
   const [email, setEmail] = useState('');
@@ -26,7 +27,7 @@ export default function Auth({ currentUser, setCurrentUser }) {
   return (
     <div>
       <p>{error}</p> 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='authForm'>
         <label>
           email:
           <input type='email' onChange={(e) => setEmail(e.target.value)}></input>

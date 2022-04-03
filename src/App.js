@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header setCurrentUser={setCurrentUser} />
+        <Header {...{ currentUser, setCurrentUser }} />
         <Switch>
           <Route exact path='/'>
             <Auth {...{ setCurrentUser, currentUser }} />

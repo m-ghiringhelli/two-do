@@ -1,4 +1,13 @@
+* {
+  margin: 0;
+}
+
 .App {
+  --color1: hsla(252, 100%, 88%, 1);
+  --color2: hsla(240, 69%, 82%, 1);
+  --color3: hsla(311, 35%, 79%, 1);
+  --color4: hsla(334, 41%, 68%, 1);
+  --color5: hsla(350, 35%, 53%, 1);
   text-align: center;
 }
 

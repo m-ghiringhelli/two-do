@@ -1,0 +1,23 @@
+.header {
+    background-color: var(--color2);
+    color: white;
+    height: 150px;
+    font-size: 3rem;
+}
+
+.header button {
+    background-color: var(--color1);
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    position: absolute;
+    font-size: 1.6rem;
+    right: 0;
+    top: 80px;
+}
+
+.hidden {
+    display: none;
+}
