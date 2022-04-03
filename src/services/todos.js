@@ -1,7 +1,7 @@
 import { client, checkError } from './client.js';
 
 export async function fetchToDos() {
-  const response = await client.from('two-dos').select('*');
+  const response = await client.from('two-dos').select('*').order('id', { ascending: true });
   return checkError(response);
 }
 
