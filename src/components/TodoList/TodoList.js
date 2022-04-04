@@ -1,6 +1,6 @@
 import './TodoList.css';
 
-export default function TodoList({ todos, setTodos, handleClick }) {
+export default function TodoList({ todos, handleClick }) {
   
   return (
     <>
