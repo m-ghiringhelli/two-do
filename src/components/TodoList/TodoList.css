@@ -1,0 +1,19 @@
+.task {
+    font-weight: bold;
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    color: var(--color5);
+    font-size: 1.6rem;
+}
+
+.list {
+    width: 300px;
+    border: 3px solid var(--color2);
+    margin: auto;
+}
+
+.completed {
+    color: lightgrey;
+    font-weight: normal;
+}

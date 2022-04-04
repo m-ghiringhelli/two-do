@@ -1,0 +1,32 @@
+.header {
+    background-color: var(--color2);
+    color: white;
+    height: 150px;
+    font-size: 3rem;
+    font-family: 'Vazirmatn';
+    border-bottom: 5px solid var(--color4);
+}
+
+.header button {
+    background-color: var(--color1);
+    border: 2px solid white;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px;
+    position: absolute;
+    font-size: 1.2rem;
+    right: 0;
+    top: 80px;
+    font-family: 'Vazirmatn';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: rgb(168, 158, 208)
+}
+
+.hidden {
+    display: none;
+}

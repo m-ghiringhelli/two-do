@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
 .App {
+  --color1: hsla(252, 100%, 88%, 1);
+  --color2: hsla(240, 69%, 82%, 1);
+  --color3: hsla(311, 35%, 79%, 1);
+  --color4: hsla(334, 41%, 68%, 1);
+  --color5: hsla(350, 35%, 53%, 1);
   text-align: center;
+  background-color: var(--color3);
+  height: 100vh;
 }
 
 .App-logo {
